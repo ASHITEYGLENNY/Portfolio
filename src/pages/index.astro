@@ -1,16 +1,88 @@
 ---
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Your Name | Web Developer</title>
+  </head>
+  <body>
+    <main class="hero">
+      <p class="status"><span class="dot"></span> Open to internships & freelance work</p>
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Glennette Ashiety</h1>
+      <p class="tagline">
+        Level 300 IT student at UPSA in Accra, building web projects and
+        learning something new with every one.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-outline">Hire me</a>
+      </div>
+    </main>
+  </body>
 </html>
+
+<style>
+  .hero {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem;
+  }
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--pink-tint);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: var(--green);
+    border-radius: 50%;
+  }
+  .eyebrow {
+    margin: 2rem 0 0;
+    color: var(--pink);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    margin: 0.25rem 0 1rem;
+    line-height: 1.1;
+  }
+  .tagline {
+    font-size: 1.2rem;
+    max-width: 55ch;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn-primary {
+    background: var(--pink);
+    color: var(--white);
+  }
+  .btn-outline {
+    border: 2px solid var(--pink);
+    color: var(--pink);
+  }
+  .btn:hover {
+    background: var(--pink-light);
+    border-color: var(--pink-light);
+    color: var(--white);
+  }
+</style>

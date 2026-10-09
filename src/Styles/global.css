@@ -1,0 +1,17 @@
+:root {
+    --white: #ffffff;
+    --pink-tint: #fff0f6;
+    --text: #1f1626;
+    --pink: #db2777;
+    --pink-light: #f472b6;
+    --yellow: #ffb703;
+    --green: #10b981;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.6;
+}
