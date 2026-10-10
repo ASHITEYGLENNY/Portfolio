@@ -49,8 +49,14 @@ const projects = [
             <a href="#contact" class="btn btn-outline">Hire me</a>
           </div>
         </div>
-        <div class="hero-image">
-          <img src="/me.jpg" alt="Photo of Glennette Ashiety" />
+                <div class="hero-visual">
+          <div class="hero-image">
+            <img src="/portfoliopic.jpg" alt="Photo of Glennette Ashiety" />
+          </div>
+          <img src="/flower1.jpg" alt="" class="deco flower1" />
+          <img src="/flower2.jpg" alt="" class="deco flower2" />
+          <img src="/flower3.jpg" alt="" class="deco flower3" />
+          <img src="/flower4.jpg" alt="" class="deco flower4" />
         </div>
       </div>
     </main>
@@ -292,5 +298,27 @@ const projects = [
     .nav nav {
       display: none;
     }
+  }
+    .hero {
+    overflow: hidden;
+  }
+  .hero-visual {
+    position: relative;
+  }
+  .deco {
+    position: absolute;
+    pointer-events: none;
+  }
+  .bow {
+    width: 90px;
+    top: -45px;
+    left: -45px;
+    transform: rotate(-12deg);
+    mix-blend-mode: multiply;
+  }
+  .lily {
+    width: 120px;
+    bottom: -30px;
+    right: -30px;
   }
 </style>
