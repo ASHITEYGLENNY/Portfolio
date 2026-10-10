@@ -6,12 +6,18 @@
     --pink-light: #f472b6;
     --yellow: #ffb703;
     --green: #10b981;
+    --font-serif: 'Playfair Display', Georgia, serif;
+  --font-script: 'Pinyon Script', cursive;
 }
 
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     background: var(--white);
     color: var(--text);
     line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
